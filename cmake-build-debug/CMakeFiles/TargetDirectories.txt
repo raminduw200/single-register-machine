@@ -1,0 +1,3 @@
+/media/raminduw/Education/UCSC/Year_1/C/Assignment 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/raminduw/Education/UCSC/Year_1/C/Assignment 2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/raminduw/Education/UCSC/Year_1/C/Assignment 2/cmake-build-debug/CMakeFiles/Assignment_2.dir
