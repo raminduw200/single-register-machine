@@ -1,53 +1,48 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-struct Stack {
-    int top;
-    int size;
-    char stack[];
-};
+int top = -1;
+const int size = 50;
+char stack[50];
 
-struct Stack* constructor(int size){
-    struct Stack* stack = malloc(size * sizeof(struct Stack));
-    stack -> size = size;
-    stack -> top = -1;
+int isFull(){
+    return top == size+1;
 }
 
-int isEmpty(struct Stack *stack){
-    if(stack -> top == -1)
-        return 1;
+int isEmpty(){
+    return top == -1;
+}
+
+int getSize(){
+    return size;
+}
+
+int peek(){
+    if (!isEmpty())
+        return stack[top];
     else
-        return 0;
+        printf("[ERROR-PEEK] Stack Underflow: Stack is EMPTY!\n");
+    return 0;
 }
 
-int isFull(struct Stack *stack){
-    if(stack -> top == stack -> size-1)
-        return 1;
+char push(char value_){
+    if (!isFull())
+        stack[++top] = value_;
     else
-        return 0;
+        printf("[ERROR-PUSH] Stack Overflow: Stack is FULL!\n");
+    return 0;
 }
 
-void enqueue(struct Stack *stack, char element){
-    if(!isFull(stack))
-        stack -> stack[stack -> top++] = element;
+char pop(){
+    if (!isEmpty())
+        return stack[top--];
     else
-        printf("[ERROR] - StackOverflow: Cannot add another element, Stack is full.\n");
+        printf("[ERROR-POP] Stack Underflow: Stack is EMPTY!\n");
+    return 0;
 }
 
-char dequeue(struct Stack *stack) {
-    if (!isEmpty(stack))
-        return stack->stack[stack->top--];
-    else {
-        printf("[ERROR] - StackUnderflow: Cannot remove the top element, Stack is empty.\n");
-        return -1;
-    }
-}
-
-char peek(struct Stack *stack) {
-    if (!isEmpty(stack))
-        return stack->stack[stack->top--];
-    else {
-        printf("[ERROR] - StackUnderflow: Cannot get the top element, Stack is empty.\n");
-        return -1;
-    }
+void display(){
+    printf("[STACK] Printing the stack... \n");
+    for (int i = top; i != -1; --i)
+        printf("%c", stack[i]);
+    printf("\n");
 }

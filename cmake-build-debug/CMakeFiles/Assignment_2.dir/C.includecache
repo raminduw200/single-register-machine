@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/raminduw/Education/UCSC/Year_1/C/Assignment 2/main.c
+stack.c
+/media/raminduw/Education/UCSC/Year_1/C/Assignment 2/stack.c
+string.h
+-
+
+/media/raminduw/Education/UCSC/Year_1/C/Assignment 2/stack.c
+stdio.h
+-
+

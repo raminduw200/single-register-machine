@@ -1,10 +1,4 @@
-/home/raminduw/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7442.42/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/raminduw/Education/UCSC/Year_1/C/Assignment 2"
--- The C compiler identification is GNU 10.3.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
+/home/raminduw/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7628.27/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/raminduw/Education/UCSC/Year_1/C/Assignment 2"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /media/raminduw/Education/UCSC/Year_1/C/Assignment 2/cmake-build-debug
