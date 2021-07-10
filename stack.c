@@ -20,7 +20,7 @@ int peek(){
     if (!isEmpty())
         return stack[top];
     else
-        printf("[ERROR-PEEK] Stack is EMPTY!\n");
+        printf("[ERROR-PEEK] Stack Underflow: Stack is EMPTY!\n");
     return 0;
 }
 
@@ -28,7 +28,7 @@ char push(char value_){
     if (!isFull())
         stack[++top] = value_;
     else
-        printf("[ERROR-PUSH] Stack is FULL!\n");
+        printf("[ERROR-PUSH] Stack Overflow: Stack is FULL!\n");
     return 0;
 }
 
@@ -36,7 +36,7 @@ char pop(){
     if (!isEmpty())
         return stack[top--];
     else
-        printf("[ERROR-POP] Stack is EMPTY!\n");
+        printf("[ERROR-POP] Stack Underflow: Stack is EMPTY!\n");
     return 0;
 }
 
