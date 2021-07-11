@@ -73,7 +73,8 @@ char pop(){
 }
 
 /*
- * Display all the elements in the stack
+ * Display all the elements in the stack without removing
+ * :: Used for debugging.
  */
 void display(){
     printf("[STACK] Printing the stack... \n");
